@@ -23,5 +23,10 @@ def c_with_text(text):
     return f"c {c_formatted}"
 
 
+@app.route('/python/<text>', strict_slashes=False)
+def python_text(text):
+    python_formatted = text.replace('_', ' ')
+    return f"Python {python_formatted}"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
