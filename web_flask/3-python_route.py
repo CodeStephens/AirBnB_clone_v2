@@ -35,7 +35,7 @@ def python():
 
 
 @app.route('/python/', strict_slashes=False)
-def python_text():
+def python_():
     return "Python is cool"
 
 
