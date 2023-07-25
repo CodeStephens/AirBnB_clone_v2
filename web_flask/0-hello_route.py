@@ -4,7 +4,7 @@
 
 from flask import Flask
 
-app = Flask('web_flask')
+app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
